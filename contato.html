@@ -15,23 +15,33 @@
         <a href="contato.html">Contato</a>
     </nav>
     <main>
-        <form action="">
-            <strong>Nome</strong>
-            <input type="text" name="nome" required><br>
+        <fieldset>
+            <legend>Dados</legend>
+            <form method="post">
+                <strong>Nome</strong>
+                <input type="text" name="nome" required><br>
 
-            <strong>E-mail</strong><br>
-            <input type="email" name="email" required><br>
+                <strong>E-mail</strong><br>
+                <input type="email" name="email" required><br>
 
-            <strong>Linguagens</strong>
-            <input type="checkbox" name="ling" value ="Python"><br>
-            <input type="checkbox" name="ling" value ="Java"><br>
-            <input type="checkbox" name="ling" value ="C#"><br>
-            <input type="checkbox" name="ling" value ="R"><br>
-
-            <strong>Conhecimento Prévios</strong><br>
-            <textarea name="conhecimentos" cols="50" rows="5"></textarea>
-        </form>
+                <strong>Linguagens</strong><br>
+                <label for="ling1">
+                Python <input type="checkbox" name="ling" id="ling1" value ="Python"><br>
+                </label>
+                <label for="ling2">
+                Java <input type="checkbox" name="ling" id="ling2" value ="Java"><br>
+                </label>
+                <label for="ling3">
+                C# <input type="checkbox" name="ling" id="ling3" value ="C#"><br>
+                </label>
+                <label for="ling4">
+                R <input type="checkbox" name="ling" id="ling4" value ="R"><br>
+                </label>
+                <strong>Conhecimento Prévios</strong><br>
+                <textarea name="conhecimentos" cols="50" rows="5"></textarea>
+            </form>
         <button>Agendar</button>
+    </fieldset>
     </main>
     <footer>
         &copy; - Prof. Ajax - 2022
